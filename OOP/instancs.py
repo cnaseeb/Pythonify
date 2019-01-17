@@ -10,3 +10,6 @@ SoftwareEngineer.retrieveEmployeeData()
 #using built in class attributes
 print(Employee.__doc__)
 
+#calling financeEmployee class and creating it's instance
+SoftwareEngineer_Finance = FinanceEmployee("Ankur","1990", "60000", "28", "Milano", "0039262356326", "True")
+SoftwareEngineer_Finance.retrieveEmployeeData()
