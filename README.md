@@ -9,8 +9,10 @@ This repository implements OOP concepts in Python:
 2. Classes
 3. Inheritance
 4. Overriding methods
-5. LinkedList 
-6. Loops etc. 
+5. LinkedList
+6. Loops 
+7. Queue
+8. Stack etc. 
 
 Algorithms:
 1. Binary Search
