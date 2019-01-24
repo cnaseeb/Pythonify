@@ -36,5 +36,18 @@ for i in range(len(X)):
 for matrix in result:
   print(matrix)
                 
+#2: matrix multiplication using nested list comprehension
+                
+result = [[sum(a*b for a,b in zip(X_row,Y_col)) for Y_col in zip(*Y)] for X_row in X]
 
-    
+#print the resulting matrix
+for matrix in result:
+  print(matrix)
+                
+                
+#3. Matrix multiplication using numpy
+result_matmul = np.matmul(X, Y)
+
+#print the resulting matrix
+for matrix in result_matmul:
+  print(matrix)
