@@ -12,7 +12,14 @@ This repository implements OOP concepts in Python:
 5. LinkedList
 6. Loops 
 7. Queue
-8. Stack etc. 
+8. Stack 
+9. Matrices and operations on them using 
+  a. For Loops (nested)
+  b. List comprehension (nested)
+  c. Numpy methods 
+  
+ 10. etc. 
+
 
 Algorithms:
 1. Binary Search
