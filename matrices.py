@@ -1,5 +1,8 @@
 #!/usr/bin/python
 
+#imports
+import numpy as np
+
 #This file implements matrices, vectors, operatiosn on them and their properties. In short, basics of linear algebra.
 
 #Create an A matrix of size 4 * 3
@@ -29,7 +32,7 @@ for i in range(len(X)):
   for j in range(len(Y[0])):
     #going through rows of Y
     for k in range(len(Y)):
-      result[i][j += X[i][k] + Y[k][j]
+      result[i][j] += X[i][k] + Y[k][j]
                 
                 
 #print the resulting matrix
@@ -38,12 +41,12 @@ for matrix in result:
                 
 #2: matrix multiplication using nested list comprehension
                 
-result = [[sum(a*b for a,b in zip(X_row,Y_col)) for Y_col in zip(*Y)] for X_row in X]
+"""result = [[sum(a*b for a,b in zip(X_row,Y_col)) for Y_col in zip(*Y)] for X_row in X]
 
 #print the resulting matrix
 for matrix in result:
-  print(matrix)
-                
+  print(matrix)""" #
+               
                 
 #3. Matrix multiplication using numpy
 result_matmul = np.matmul(X, Y)
@@ -51,3 +54,22 @@ result_matmul = np.matmul(X, Y)
 #print the resulting matrix
 for matrix in result_matmul:
   print(matrix)
+
+
+###Transpose a matrix
+''' Program to transpose a matrix using list comprehension'''
+
+X = [[12,7],
+    [4 ,5],
+    [3 ,8]]
+
+result = [[X[j][i] for j in range(len(X))] for i in range(len(X[0]))]
+
+for r in result:
+   print(r)
+
+### Transpose a matrix using numpy
+X = np.array([[12, 7], [4, 5], [3, 8]])
+X.transpose()
+
+
